@@ -1,3 +1,4 @@
+
 package edu.williamcastellanos.products.security;
 
 import org.springframework.context.annotation.Bean;
@@ -41,7 +42,7 @@ public class SecurityConfig {
             )
             .formLogin(form -> form
                 .loginPage("/login")
-                .defaultSuccessUrl("/", true)
+                .defaultSuccessUrl("/orders", true)
                 .permitAll()
             )
             .logout(logout -> logout
